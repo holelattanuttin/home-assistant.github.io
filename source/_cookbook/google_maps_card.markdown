@@ -26,6 +26,10 @@ camera:
   limit_refetch_to_url_change: true
 ```
 
+<p class='note warning'>
+If your template uses an `entity_id` that begins with a number (example: `states.device_tracker.2008_gmc`) you must use a bracket syntax to avoid errors caused by rendering the `entity_id` improperly. In the example given, the correct syntax for the device tracker would be: `states.device_tracker['2008_gmc']`
+</p>
+
 <p class='img'>
   <img src='/images/components/camera/generic-google-maps.png' alt='Screenshot showing Google Maps integration in Home Assistant front end.'>
 </p>
